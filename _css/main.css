@@ -1,0 +1,84 @@
+/*-----------------------------------------------------------------------------------------
+                                        Importar
+------------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Cinzel|Indie+Flower|Marck+Script|Playfair+Display|Roboto+Condensed|Sacramento|Tangerine');
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Caveat', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Tangerine', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+/*-----------------------------------------------------------------------------------------
+                                        Configurações Gerais
+------------------------------------------------------------------------------------------*/
+
+body, html{ font-family: 'Playfair Display', serif; font-size: 20px; overflow-x: hidden; height: 100%;}
+
+/*-----------------------------------------------------------------------------------------
+                                        Cabeçalho
+------------------------------------------------------------------------------------------*/
+
+.contato{ font-size: 0.9em; letter-spacing: 1px; }
+.email{ color: rgb(143, 142, 142); }
+.telefone{ display: inline; color: white; background-color: rgb(170, 117, 39); padding: 5px; box-sizing: border-box; }
+
+/*-----------------------------------------------------------------------------------------
+                                        Menu Fixo Topo
+------------------------------------------------------------------------------------------*/
+
+.menuTopo{ background-color: white}
+
+/*-- Efeitos de Hover-- */
+.menuTopo a, .menuTopo button{ color: black; }
+.menuTopo a:hover, .menuTopo button:hover{ color: red; }
+
+/*-----------------------------------------------------------------------------------------
+                                        Carousel
+------------------------------------------------------------------------------------------*/
+
+.carroussel{background-color: black; position: relative;}
+
+/*-----------------------------------------------------------------------------------------
+                                        Formulário
+------------------------------------------------------------------------------------------*/
+#abrirModal{ position: absolute; top: 0; right: 0; padding: 10px; margin: 20px}
+
+.formulario{ border: 1px solid white; background-color: rgba(219, 61, 61, 0.37); color: white; border-radius: 20px; padding: 40px; z-index: 1; position: absolute; right: 10%; top: 10%}
+.consulte { font-size: 1em; text-transform: uppercase; margin-bottom: 40px}
+.imagem{ z-index: 0; }
+/*-----------------------------------------------------------------------------------------
+                                        Media Query
+------------------------------------------------------------------------------------------*/
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    body{ font-size: 13px;}
+    #formulario{ display: none; }
+    #abrirModal{ display: block; font-size: 12px; padding: 5px}
+}
+
+/* Small devices (landscape phones, less than 768px)
+@media (min-width: 767.98px) and { font-size: 13px; }
+
+/* Medium devices (tablets, less than 992px)
+@media (min-width: 991.98px) {  }*/
+
+/* Large devices (desktops, less than 1200px)*/
+
+@media (min-width: 576px) and (max-width: 1198.98px) { 
+    #formulario{ display: none; }
+    #abrirModal{ display: block;}
+}
+
+@media (min-width: 1199.99px) { 
+    #formulario{ display: block; }
+    #abrirModal{ display: none; }
+}
