@@ -19,21 +19,23 @@ font-family: 'Roboto Condensed', sans-serif;
                                         Configurações Gerais
 ------------------------------------------------------------------------------------------*/
 
-body, html{ font-family: 'Playfair Display', serif; font-size: 20px; overflow-x: hidden; height: 100%;}
+html { overflow-x: hidden; height: 100%; }
+body { font-family: 'Playfair Display', serif; font-size: 20px; overflow-x: hidden }
 
 /*-----------------------------------------------------------------------------------------
                                         Cabeçalho
 ------------------------------------------------------------------------------------------*/
 
 .contato{ font-size: 0.9em; letter-spacing: 1px; }
-.email{ color: rgb(143, 142, 142); }
-.telefone{ display: inline; color: white; background-color: rgb(170, 117, 39); padding: 5px; box-sizing: border-box; }
+.email{ color: rgb(199, 199, 199); }
+.telefone{ display: inline; color: white; background-color: rgb(170, 117, 39); padding: 8px; box-sizing: border-box; }
+.fundoCabecalho { background-image: radial-gradient(ellipse, rgb(201, 201, 201) 5%, rgb(155, 153, 153)) }
 
 /*-----------------------------------------------------------------------------------------
                                         Menu Fixo Topo
 ------------------------------------------------------------------------------------------*/
-
-.menuTopo{ background-color: white}
+.logoSite{ transition: 0.3s}
+.menuTopo{ background-color: white;}
 
 /*-- Efeitos de Hover-- */
 .menuTopo a, .menuTopo button{ color: black; }
@@ -48,11 +50,47 @@ body, html{ font-family: 'Playfair Display', serif; font-size: 20px; overflow-x:
 /*-----------------------------------------------------------------------------------------
                                         Formulário
 ------------------------------------------------------------------------------------------*/
-#abrirModal{ position: absolute; top: 0; right: 0; padding: 10px; margin: 20px}
-
-.formulario{ border: 1px solid white; background-color: rgba(219, 61, 61, 0.37); color: white; border-radius: 20px; padding: 40px; z-index: 1; position: absolute; right: 10%; top: 10%}
+#abrirModal{ position: absolute; top: 0; right: 0; padding: 10px; margin: 20px;}
+.formulario{ border: 1px solid white; background-color: rgba(196, 54, 54, 0.623); color: white; border-radius: 20px; padding: 40px; z-index: 1; position: absolute; right: 10%; top: 1%;}
 .consulte { font-size: 1em; text-transform: uppercase; margin-bottom: 40px}
 .imagem{ z-index: 0; }
+
+/*-----------------------------------------------------------------------------------------
+                                        Seção balança
+------------------------------------------------------------------------------------------*/
+.balancaETexto{ background-color: rgb(233, 233, 233)}
+.frase{ font-size: 0.9em; transition: 1; opacity: 0;}
+.frase p { font-size: 0.9em; transition: 1s;}
+.balanca{ font-size: 100px; background-color: rgb(233, 233, 233); border:1px solid rgb(233, 233, 233); color: rgba(220, 220, 220, 1); padding: 50px; border-radius: 100%; transition: 0.5s; opacity: 0;}
+/*-- Efeito hover --*/
+.balanca:hover{ background-color: rgba(226, 226, 226, 0.856); color: white;}                                                                                                                                                                                                                                                                                              ;color: white; }
+
+
+/*-----------------------------------------------------------------------------------------
+                                        Seção Figuras
+------------------------------------------------------------------------------------------*/
+
+.frase{ background-color: rgb(153, 28, 28); opacity: 0;}
+.textoFiguras{ font-size: 1em; opacity: 0; background-color: white}
+
+/*-----------------------------------------------------------------------------------------
+                                        Rodape
+------------------------------------------------------------------------------------------*/
+
+.endereco{ color: rgb(199, 199, 199); }
+.redes{ font-size: 70px; }
+.redes a { text-decoration: none; }
+.facebook{ color: #4267b2; transition: 0.5s; }
+.facebook:hover { color: white;  font-size: 80px; }
+.twitter{ color: #00aced; transition: 0.5s; }
+.twitter:hover { color: white;  font-size: 80px; }
+.linkedin{ color: #007bb6; transition: 0.5s; }
+.linkedin:hover { color: white;  font-size: 80px; }
+.instagram{ color: #517fa4; transition: 0.5s; }
+.instagram:hover { color: white;  font-size: 80px; }
+.marca { color: white; background: rgb(49, 49, 49); }
+.marca h2 { font-size: 15px; }
+.fundoRodape { background-image: radial-gradient(ellipse, rgb(201, 201, 201) 5%, rgb(155, 153, 153)) }
 /*-----------------------------------------------------------------------------------------
                                         Media Query
 ------------------------------------------------------------------------------------------*/
@@ -62,7 +100,10 @@ body, html{ font-family: 'Playfair Display', serif; font-size: 20px; overflow-x:
 @media (max-width: 575.98px) { 
     body{ font-size: 13px;}
     #formulario{ display: none; }
-    #abrirModal{ display: block; font-size: 12px; padding: 5px}
+    #abrirModal{ display: block; font-size: 12px; padding: 5px;}
+    .marca { width: 100% }
+    .textoFiguras { font-size: 20px }
+    .frase { font-size: 17px }
 }
 
 /* Small devices (landscape phones, less than 768px)
