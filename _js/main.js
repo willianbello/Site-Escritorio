@@ -70,7 +70,7 @@ $(document).ready(function() {
             $('#inicio').removeClass('bordaBottom');
         }
 
-        if (minhaPosicao >= 250 && minhaPosicao <= 699){
+        if (minhaPosicao >= 250 && minhaPosicao <= 1299){
             $('#apresentacao').addClass('text-focus-in');
             $('#apresentacao').addClass('bordaBottom');
         } else  {
@@ -78,7 +78,7 @@ $(document).ready(function() {
             $('#apresentacao').removeClass('bordaBottom');
         }
 
-        if (minhaPosicao >= 700 && minhaPosicao <= 1250){
+        if (minhaPosicao >= 1300 && minhaPosicao <= 1600){
             $('#atuacao').addClass('text-focus-in');
             $('#atuacao').addClass('bordaBottom');
         } else  {
@@ -86,7 +86,7 @@ $(document).ready(function() {
             $('#atuacao').removeClass('bordaBottom');
         }
 
-        if (minhaPosicao >= 1251){
+        if (minhaPosicao >= 1601){
             $('#local').addClass('text-focus-in');
             $('#local').addClass('bordaBottom');
             
